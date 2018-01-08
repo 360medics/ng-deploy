@@ -1,0 +1,7 @@
+.git
+.vscode
+.gitignore
+.DS_Store
+.local
+*.php~
+*.js~
