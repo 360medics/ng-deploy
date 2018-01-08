@@ -10,7 +10,7 @@ Support multiple environments/servers.
 cd /somewhere/convenient
 wget https://github.com/adadgio/ng-deploy/archive/1.2.zip && unzip 1.2.zip && rm 1.2.zip
 chmod +x deploy.sh
-sudo ln -s /somewhere/convenient/deploy.sh /usr/local/bin/deploy
+sudo ln -s /somewhere/convenient/deploy.sh /usr/local/bin/ngdeploy
 ```
 
 ## Prerequisites
@@ -30,18 +30,18 @@ deploy/
 Deploy to a new version or override existing version.
 
 ```
-deploy --env=staging --version=2.2.1
-# deploy --e=staging -v=2.2.1
+ngdeploy --env=staging --version=2.2.1
+# ngdeploy --e=staging -v=2.2.1
 ```
 
 Rollback to a specific version.
 
 ```
-deploy --env=staging --version=2.2.0
+ngdeploy --env=staging --version=2.2.0
 ```
 
 Read current remotely deployed live version vs local version.
 
 ```
-deploy --env=staging --status
+ngdeploy --env=staging --status
 ```
