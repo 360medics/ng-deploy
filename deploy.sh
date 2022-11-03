@@ -88,7 +88,7 @@ fi
 ###
 # Check that local angular ./dist folder exists
 ###
-if [ ! -f ${DIST_DIR} ]; then
+if [ ! -d ${DIST_DIR} ]; then
     echo -e "${red}✗ Local ./dist directory does not exist. Please run ng build --prod man !${nc}"
     exit 2
 fi
